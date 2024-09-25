@@ -10,7 +10,7 @@ iterations_simple = 33
 stop_iteration = None
 
 def dichotomy_method():
-    global a, b, x, stop_iteration
+    global a, b, x
 
     print(f"{'Ітерація':^8}|{'a':^18}|{'b':^18}|{'x':^18}|{'f(x)':^18}")
     print('-' * 80)
@@ -33,8 +33,6 @@ def dichotomy_method():
 
         x = (a + b) / 2
 
-    if stop_iteration:
-        print(f"\nМи могли зупинитися ще на {stop_iteration}-й ітерації.")
 
 def iteration_method():
     global x, stop_iteration
